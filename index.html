@@ -79,7 +79,25 @@
   <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:500;margin:0 0 12px;max-width:700px;" data-i18n="diff.title">Entender, conectar e fazer avançar.</h2>
 
   <div class="diff-reveal" data-diff style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:88px 0;border-top:1px solid rgba(0,0,0,0.1);">
-    <div style="order:1;"><img src="assets/illustration-diff1.png" alt="Ilustração: entender o contexto" style="width:100%;max-width:440px;height:auto;display:block;"/></div>
+    <div style="order:1;">
+      <div style="width:100%;max-width:440px;">
+        <svg id="jbSys1" viewBox="0 0 400 300" style="width:100%;height:auto;display:block;">
+          <path class="jb-s1-line" data-i="0" d="M120,90 L200,120" stroke="#c9a56a" stroke-width="1" fill="none" stroke-dasharray="140" stroke-dashoffset="140"></path>
+          <path class="jb-s1-line" data-i="1" d="M200,120 L260,160" stroke="#c9a56a" stroke-width="1" fill="none" stroke-dasharray="140" stroke-dashoffset="140"></path>
+          <path class="jb-s1-line" data-i="2" d="M200,120 L150,190" stroke="#c9a56a" stroke-width="1" fill="none" stroke-dasharray="140" stroke-dashoffset="140"></path>
+          <path class="jb-s1-line" data-i="3" d="M260,160 L230,220" stroke="#c9a56a" stroke-width="1" fill="none" stroke-dasharray="140" stroke-dashoffset="140"></path>
+          <circle class="jb-s1-noise" cx="60" cy="40" r="3" fill="#9a9a92"></circle>
+          <circle class="jb-s1-noise" cx="330" cy="70" r="2.5" fill="#9a9a92"></circle>
+          <circle class="jb-s1-noise" cx="90" cy="250" r="3" fill="#9a9a92"></circle>
+          <g class="jb-s1-tok" data-dx="-70" data-dy="-40" data-rot="-10"><circle cx="120" cy="90" r="3" fill="#16161a"></circle><text x="128" y="94" font-family="'DM Mono',monospace" font-size="11" fill="#16161a">contexto</text></g>
+          <g class="jb-s1-tok" data-dx="60" data-dy="-55" data-rot="8"><circle cx="200" cy="120" r="3" fill="#16161a"></circle><text x="208" y="124" font-family="'DM Mono',monospace" font-size="11" fill="#16161a">regras</text></g>
+          <g class="jb-s1-tok" data-dx="80" data-dy="30" data-rot="-6"><circle cx="260" cy="160" r="3" fill="#16161a"></circle><text x="268" y="164" font-family="'DM Mono',monospace" font-size="11" fill="#16161a">operação</text></g>
+          <g class="jb-s1-tok" data-dx="-50" data-dy="50" data-rot="9"><circle cx="150" cy="190" r="3" fill="#16161a"></circle><text x="158" y="194" font-family="'DM Mono',monospace" font-size="11" fill="#16161a">linguagem</text></g>
+          <g class="jb-s1-tok" data-dx="40" data-dy="60" data-rot="-8"><circle cx="230" cy="220" r="3" fill="#16161a"></circle><text x="238" y="224" font-family="'DM Mono',monospace" font-size="11" fill="#16161a">dados</text></g>
+          <g class="jb-s1-tok" data-dx="-75" data-dy="10" data-rot="11"><circle cx="90" cy="150" r="3" fill="#16161a"></circle><text x="98" y="154" font-family="'DM Mono',monospace" font-size="11" fill="#16161a">sinais</text></g>
+        </svg>
+      </div>
+    </div>
     <div style="order:2;">
       <div class="diff-line"></div>
       <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 16px;" data-i18n="diff.cards.0.label">Entender</p>
@@ -89,7 +107,25 @@
   </div>
 
   <div class="diff-reveal" data-diff style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:88px 0;border-top:1px solid rgba(0,0,0,0.1);">
-    <div style="order:2;"><img src="assets/illustration-diff2.png" alt="Ilustração: conectar áreas" style="width:100%;max-width:440px;height:auto;display:block;margin-left:auto;"/></div>
+    <div style="order:2;">
+      <div style="width:100%;max-width:440px;margin-left:auto;">
+        <svg id="jbSys2" viewBox="0 0 400 300" style="width:100%;height:auto;display:block;">
+          <line class="jb-s2-edge" data-i="0" data-from="produto" data-to="tecnologia" x1="200" y1="150" x2="300" y2="90" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <line class="jb-s2-edge" data-i="1" data-from="produto" data-to="clientes" x1="200" y1="150" x2="110" y2="70" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <line class="jb-s2-edge" data-i="2" data-from="produto" data-to="operacao" x1="200" y1="150" x2="160" y2="250" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <line class="jb-s2-edge" data-i="3" data-from="produto" data-to="negocio" x1="200" y1="150" x2="320" y2="220" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <line class="jb-s2-edge" data-i="4" data-from="tecnologia" data-to="negocio" x1="300" y1="90" x2="320" y2="220" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <line class="jb-s2-edge" data-i="5" data-from="clientes" data-to="suporte" x1="110" y1="70" x2="70" y2="190" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <line class="jb-s2-edge" data-i="6" data-from="suporte" data-to="operacao" x1="70" y1="190" x2="160" y2="250" stroke="#9a9a92" stroke-width="1" opacity="0.5"></line>
+          <g class="jb-s2-node" data-id="produto" style="cursor:pointer;" tabindex="0"><circle cx="200" cy="150" r="5" fill="#16161a"></circle><text x="210" y="146" font-family="'DM Mono',monospace" font-size="10.5" fill="#33332f">Produto</text></g>
+          <g class="jb-s2-node" data-id="tecnologia" style="cursor:pointer;" tabindex="0"><circle cx="300" cy="90" r="5" fill="#16161a"></circle><text x="310" y="86" font-family="'DM Mono',monospace" font-size="10.5" fill="#33332f">Tecnologia</text></g>
+          <g class="jb-s2-node" data-id="clientes" style="cursor:pointer;" tabindex="0"><circle cx="110" cy="70" r="5" fill="#16161a"></circle><text x="120" y="66" font-family="'DM Mono',monospace" font-size="10.5" fill="#33332f">Clientes</text></g>
+          <g class="jb-s2-node" data-id="suporte" style="cursor:pointer;" tabindex="0"><circle cx="70" cy="190" r="5" fill="#16161a"></circle><text x="80" y="186" font-family="'DM Mono',monospace" font-size="10.5" fill="#33332f">Suporte</text></g>
+          <g class="jb-s2-node" data-id="operacao" style="cursor:pointer;" tabindex="0"><circle cx="160" cy="250" r="5" fill="#16161a"></circle><text x="170" y="246" font-family="'DM Mono',monospace" font-size="10.5" fill="#33332f">Operação</text></g>
+          <g class="jb-s2-node" data-id="negocio" style="cursor:pointer;" tabindex="0"><circle cx="320" cy="220" r="5" fill="#16161a"></circle><text x="330" y="216" font-family="'DM Mono',monospace" font-size="10.5" fill="#33332f">Negócio</text></g>
+        </svg>
+      </div>
+    </div>
     <div style="order:1;">
       <div class="diff-line"></div>
       <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 16px;" data-i18n="diff.cards.1.label">Conectar</p>
@@ -99,7 +135,19 @@
   </div>
 
   <div class="diff-reveal" data-diff style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:88px 0;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);">
-    <div style="order:1;"><img src="assets/illustration-diff3.png" alt="Ilustração: transformar contexto em ação" style="width:100%;max-width:440px;height:auto;display:block;"/></div>
+    <div style="order:1;">
+      <div style="width:100%;max-width:440px;">
+        <svg id="jbSys3" viewBox="0 0 400 300" style="width:100%;height:auto;display:block;">
+          <path id="jbS3Path" d="M20,225 C90,245 130,130 200,145 C260,160 300,70 380,85" stroke="#7a2331" stroke-width="1.5" fill="none" stroke-dasharray="520" stroke-dashoffset="520"></path>
+          <g class="jb-s3-stage" data-i="0"><circle cx="30" cy="222" r="4.5" fill="#c9a56a"></circle><text x="10" y="238" font-family="'DM Mono',monospace" font-size="10" fill="#33332f">contexto</text></g>
+          <g class="jb-s3-stage" data-i="1"><circle cx="120" cy="185" r="4.5" fill="#c9a56a"></circle><text x="95" y="200" font-family="'DM Mono',monospace" font-size="10" fill="#33332f">priorização</text></g>
+          <g class="jb-s3-stage" data-i="2"><circle cx="200" cy="145" r="4.5" fill="#c9a56a"></circle><text x="180" y="130" font-family="'DM Mono',monospace" font-size="10" fill="#33332f">decisão</text></g>
+          <g class="jb-s3-stage" data-i="3"><circle cx="280" cy="100" r="4.5" fill="#c9a56a"></circle><text x="255" y="88" font-family="'DM Mono',monospace" font-size="10" fill="#33332f">construção</text></g>
+          <g class="jb-s3-stage" data-i="4"><circle cx="370" cy="85" r="4.5" fill="#c9a56a"></circle><text x="308" y="118" font-family="'DM Mono',monospace" font-size="10" fill="#33332f">medir e melhorar</text></g>
+          <g id="jbS3Loop"><path d="M362,70 a10,10 0 1,1 -0.2,0.2" stroke="#16161a" stroke-width="1.3" fill="none"></path><polygon points="360,60 366,63 361,67" fill="#16161a"></polygon></g>
+        </svg>
+      </div>
+    </div>
     <div style="order:2;">
       <div class="diff-line"></div>
       <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 16px;" data-i18n="diff.cards.2.label">Fazer avançar</p>
@@ -537,12 +585,101 @@ document.querySelectorAll('.tab-btn').forEach(function(btn){
 
 var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var diffEls = document.querySelectorAll('[data-diff]');
+
+(function(){
+  var tokens = Array.prototype.slice.call(document.querySelectorAll('.jb-s1-tok'));
+  var lines = Array.prototype.slice.call(document.querySelectorAll('.jb-s1-line'));
+  var noise = Array.prototype.slice.call(document.querySelectorAll('.jb-s1-noise'));
+  tokens.forEach(function(el, i){
+    if (reduceMotion) { el.setAttribute('transform', 'translate(0,0)'); el.style.opacity = '1'; return; }
+    el.style.transition = 'transform .8s ease, opacity .8s ease';
+    el.setAttribute('transform', 'translate(' + el.getAttribute('data-dx') + ',' + el.getAttribute('data-dy') + ') rotate(' + el.getAttribute('data-rot') + ')');
+    el.style.opacity = '0.45';
+  });
+  lines.forEach(function(el, i){
+    if (reduceMotion) { el.style.strokeDashoffset = '0'; return; }
+    el.style.transition = 'stroke-dashoffset .6s ease ' + (i * 0.12) + 's';
+  });
+  noise.forEach(function(el){
+    if (reduceMotion) { el.style.opacity = '0.12'; el.style.transform = 'scale(0.4)'; return; }
+    el.style.transformOrigin = 'center';
+    el.style.transition = 'opacity .7s ease, transform .7s ease';
+    el.style.opacity = '0.5';
+  });
+  window.__animateSys1 = function(){
+    if (reduceMotion) return;
+    tokens.forEach(function(el){ el.setAttribute('transform', 'translate(0,0)'); el.style.opacity = '1'; });
+    lines.forEach(function(el){ el.style.strokeDashoffset = '0'; });
+    noise.forEach(function(el){ el.style.opacity = '0.1'; el.style.transform = 'scale(0.4)'; });
+  };
+})();
+
+(function(){
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('.jb-s2-node'));
+  var edges = Array.prototype.slice.call(document.querySelectorAll('.jb-s2-edge'));
+  var edgeIndex = {};
+  edges.forEach(function(edge){
+    var from = edge.getAttribute('data-from'), to = edge.getAttribute('data-to'), i = parseInt(edge.getAttribute('data-i'), 10);
+    (edgeIndex[from] = edgeIndex[from] || []).push(i);
+    (edgeIndex[to] = edgeIndex[to] || []).push(i);
+  });
+  nodes.forEach(function(node){
+    var id = node.getAttribute('data-id');
+    var circle = node.querySelector('circle');
+    circle.style.transition = 'fill .3s ease';
+    function setHighlight(on){
+      circle.style.fill = on ? '#c9a56a' : '#16161a';
+      circle.setAttribute('r', on ? '7' : '5');
+      var ids = edgeIndex[id] || [];
+      edges.forEach(function(edgeEl, ei){
+        if (ids.indexOf(ei) !== -1) { edgeEl.style.stroke = '#c9a56a'; edgeEl.style.opacity = '1'; edgeEl.style.strokeWidth = '1.8'; }
+        else { edgeEl.style.opacity = on ? '0.2' : '0.5'; edgeEl.style.stroke = '#9a9a92'; edgeEl.style.strokeWidth = '1'; }
+      });
+    }
+    node.addEventListener('mouseenter', function(){ setHighlight(true); });
+    node.addEventListener('mouseleave', function(){ setHighlight(false); });
+    node.addEventListener('focus', function(){ setHighlight(true); });
+    node.addEventListener('blur', function(){ setHighlight(false); });
+  });
+})();
+
+(function(){
+  var path = document.getElementById('jbS3Path');
+  var loop = document.getElementById('jbS3Loop');
+  var stages = Array.prototype.slice.call(document.querySelectorAll('.jb-s3-stage'));
+  if (reduceMotion) {
+    if (path) path.style.strokeDashoffset = '0';
+    if (loop) loop.style.opacity = '1';
+    stages.forEach(function(el){ el.style.opacity = '1'; el.style.transform = 'none'; });
+  } else {
+    if (path) path.style.transition = 'stroke-dashoffset 1s ease';
+    if (loop) { loop.style.transition = 'opacity .5s ease .95s, transform .5s ease .95s'; loop.style.opacity = '0'; loop.style.transform = 'scale(0.7)'; loop.style.transformOrigin = 'center'; }
+    stages.forEach(function(el, i){
+      el.style.transition = 'opacity .5s ease ' + (0.15 + i * 0.15) + 's, transform .5s ease ' + (0.15 + i * 0.15) + 's';
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(8px)';
+    });
+  }
+  window.__animateSys3 = function(){
+    if (reduceMotion) return;
+    if (path) path.style.strokeDashoffset = '0';
+    stages.forEach(function(el){ el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
+    if (loop) { loop.style.opacity = '1'; loop.style.transform = 'scale(1)'; }
+  };
+})();
+
 if (reduceMotion) {
   diffEls.forEach(function(el){ el.classList.add('is-visible'); });
 } else if ('IntersectionObserver' in window) {
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
-      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        var idx = Array.prototype.indexOf.call(diffEls, entry.target);
+        if (idx === 0 && window.__animateSys1) window.__animateSys1();
+        if (idx === 2 && window.__animateSys3) window.__animateSys3();
+        io.unobserve(entry.target);
+      }
     });
   }, { threshold: 0.25 });
   diffEls.forEach(function(el){ io.observe(el); });
