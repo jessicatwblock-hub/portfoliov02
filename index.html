@@ -21,9 +21,11 @@
   .lab-thumb:hover img{opacity:1;transform:scale(1.03);}
   @media (max-width:900px){
     .jb-diff-stage{height:auto !important;}
-    .jb-diff-sticky{position:static !important;height:auto !important;overflow:visible !important;}
-    .jb-diff-concept{position:static !important;opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease;display:grid !important;grid-template-columns:1fr !important;gap:28px !important;padding:56px clamp(20px,6vw,40px) !important;}
-    .jb-diff-concept img{max-width:100% !important;margin-left:0 !important;}
+    .jb-diff-sticky{position:static !important;top:auto !important;height:auto !important;overflow:visible !important;}
+    .jb-diff-sticky > div{padding:0 clamp(20px,6vw,40px) !important;}
+    .jb-diff-sticky > div > div{min-height:0 !important;}
+    .jb-diff-concept{position:static !important;opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;display:grid !important;grid-template-columns:1fr !important;gap:20px !important;padding:36px 0 !important;}
+    .jb-diff-concept img{max-width:280px !important;margin-left:0 !important;}
   }
   @media (prefers-reduced-motion: reduce){
     .jb-diff-concept{opacity:1 !important;transform:none !important;}
@@ -79,66 +81,59 @@
 </header>
 
 <!-- DIFERENCIAL -->
-<section id="diferencial" data-screen-label="O que me diferencia" style="padding:110px 0 80px;overflow:hidden;">
-  <div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,6vw,64px);">
-    <p style="font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7a2331;margin:0 0 18px;">02 / <span data-i18n="diff.eyebrow">O que me diferencia</span></p>
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:500;margin:0 0 12px;max-width:700px;" data-i18n="diff.title">Entender, conectar e fazer avançar.</h2>
+<section id="diferencial" data-screen-label="O que me diferencia" style="padding:96px 0 48px;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,6vw,64px);">
+    <p style="font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7a2331;margin:0 0 16px;">02 / <span data-i18n="diff.eyebrow">O que me diferencia</span></p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:500;margin:0 0 8px;max-width:700px;" data-i18n="diff.title">Entender, conectar e fazer avançar.</h2>
   </div>
 
-  <div id="jbDiffStage" class="jb-diff-stage" style="position:relative;height:300vh;margin-top:24px;">
-    <div class="jb-diff-sticky" style="position:sticky;top:0;height:100vh;overflow:hidden;">
+  <div id="jbDiffStage" class="jb-diff-stage" style="position:relative;height:200vh;margin-top:8px;">
+    <div id="jbDiffSticky" class="jb-diff-sticky" style="position:sticky;top:100px;height:74vh;display:flex;align-items:center;">
+      <div style="max-width:1200px;margin:0 auto;width:100%;padding:0 clamp(20px,6vw,64px);position:relative;">
+        <div style="position:relative;min-height:52vh;">
 
-      <div id="jbDiffConcept0" class="jb-diff-concept" style="position:absolute;inset:0;display:grid;grid-template-columns:1.05fr 0.95fr;align-items:center;gap:clamp(32px,6vw,96px);padding:0 clamp(24px,6vw,88px);opacity:0;">
-        <div style="position:relative;">
-          <img id="jbDiffImg0" src="assets/illustration-diff1.png" alt="Ilustração: entender o contexto" style="width:100%;max-width:600px;height:auto;display:block;"/>
-          <svg viewBox="0 0 400 400" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;">
-            <circle class="jb-diff-dot0" data-dx="-140" data-dy="-120" cx="200" cy="200" r="4" fill="#7a2331"></circle>
-            <circle class="jb-diff-dot0" data-dx="130" data-dy="-90" cx="200" cy="200" r="3" fill="#c9a56a"></circle>
-            <circle class="jb-diff-dot0" data-dx="-110" data-dy="110" cx="200" cy="200" r="3" fill="#7a2331"></circle>
-            <circle class="jb-diff-dot0" data-dx="120" data-dy="130" cx="200" cy="200" r="4" fill="#c9a56a"></circle>
-          </svg>
-        </div>
-        <div>
-          <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 14px;" data-i18n="diff.cards.0.label">Entender</p>
-          <h3 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.6vw,2.9rem);font-weight:500;margin:0 0 16px;line-height:1.15;max-width:460px;" data-i18n="diff.cards.0.title">Aprendo rápido domínios complexos</h3>
-          <p style="font-size:14px;line-height:1.7;color:#4a4a45;margin:0;max-width:380px;" data-i18n="diff.cards.0.body">Antes de propor uma solução, procuro entender contexto, regras, operação, linguagem do negócio e o que realmente está causando o problema.</p>
+          <div id="jbDiffConcept0" class="jb-diff-concept" style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;opacity:0;">
+            <div>
+              <img src="assets/illustration-diff1.png" alt="Ilustração: entender o contexto" style="width:100%;max-width:460px;height:auto;display:block;"/>
+            </div>
+            <div>
+              <div style="width:32px;height:2px;background:#7a2331;margin-bottom:18px;"></div>
+              <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 14px;" data-i18n="diff.cards.0.label">Entender</p>
+              <h3 style="font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:500;margin:0 0 16px;line-height:1.2;max-width:42ch;" data-i18n="diff.cards.0.title">Aprendo rápido domínios complexos</h3>
+              <p style="font-size:15px;line-height:1.75;color:#4a4a45;margin:0;max-width:40ch;" data-i18n="diff.cards.0.body">Antes de propor uma solução, procuro entender contexto, regras, operação, linguagem do negócio e o que realmente está causando o problema.</p>
+            </div>
+          </div>
+
+          <div id="jbDiffConcept1" class="jb-diff-concept" style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;opacity:0;">
+            <div>
+              <div style="width:32px;height:2px;background:#7a2331;margin-bottom:18px;"></div>
+              <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 14px;" data-i18n="diff.cards.1.label">Conectar</p>
+              <h3 style="font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:500;margin:0 0 16px;line-height:1.2;max-width:42ch;" data-i18n="diff.cards.1.title">Enxergo o produto como um sistema</h3>
+              <p style="font-size:15px;line-height:1.75;color:#4a4a45;margin:0;max-width:40ch;" data-i18n="diff.cards.1.body">Produto, tecnologia, clientes, suporte, operação e negócio não são problemas separados. As melhores decisões aparecem quando essas partes entram na mesma leitura.</p>
+            </div>
+            <div>
+              <img src="assets/illustration-diff2.png" alt="Ilustração: conectar áreas" style="width:100%;max-width:460px;height:auto;display:block;margin-left:auto;"/>
+            </div>
+          </div>
+
+          <div id="jbDiffConcept2" class="jb-diff-concept" style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;opacity:0;">
+            <div>
+              <img src="assets/illustration-diff3.png" alt="Ilustração: transformar contexto em ação" style="width:100%;max-width:460px;height:auto;display:block;"/>
+            </div>
+            <div>
+              <div style="width:32px;height:2px;background:#7a2331;margin-bottom:18px;"></div>
+              <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 14px;" data-i18n="diff.cards.2.label">Fazer avançar</p>
+              <h3 style="font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:500;margin:0 0 16px;line-height:1.2;max-width:42ch;" data-i18n="diff.cards.2.title">Transformo contexto em ação</h3>
+              <p style="font-size:15px;line-height:1.75;color:#4a4a45;margin:0;max-width:40ch;" data-i18n="diff.cards.2.body">Organizo o problema, defino prioridades, crio clareza entre áreas e acompanho a construção até existir algo que possa ser usado, medido e melhorado.</p>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <div id="jbDiffConcept1" class="jb-diff-concept" style="position:absolute;inset:0;display:grid;grid-template-columns:0.95fr 1.05fr;align-items:center;gap:clamp(32px,6vw,96px);padding:0 clamp(24px,6vw,88px);opacity:0;">
-        <div>
-          <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 14px;" data-i18n="diff.cards.1.label">Conectar</p>
-          <h3 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.6vw,2.9rem);font-weight:500;margin:0 0 16px;line-height:1.15;max-width:460px;" data-i18n="diff.cards.1.title">Enxergo o produto como um sistema</h3>
-          <p style="font-size:14px;line-height:1.7;color:#4a4a45;margin:0;max-width:380px;" data-i18n="diff.cards.1.body">Produto, tecnologia, clientes, suporte, operação e negócio não são problemas separados. As melhores decisões aparecem quando essas partes entram na mesma leitura.</p>
-        </div>
-        <div style="position:relative;">
-          <img src="assets/illustration-diff2.png" alt="Ilustração: conectar áreas" style="width:100%;max-width:600px;height:auto;display:block;margin-left:auto;"/>
-          <svg viewBox="0 0 400 400" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;">
-            <path class="jb-diff-line1" d="M-40,120 C100,100 220,140 400,90" fill="none" stroke="#7a2331" stroke-width="1.5" opacity="0.55"></path>
-            <path class="jb-diff-line1" d="M-40,220 C100,240 220,190 400,210" fill="none" stroke="#c9a56a" stroke-width="1.5" opacity="0.55"></path>
-            <path class="jb-diff-line1" d="M-40,320 C100,300 220,340 400,300" fill="none" stroke="#7a2331" stroke-width="1.5" opacity="0.4"></path>
-          </svg>
-        </div>
-      </div>
-
-      <div id="jbDiffConcept2" class="jb-diff-concept" style="position:absolute;inset:0;display:grid;grid-template-columns:1.05fr 0.95fr;align-items:center;gap:clamp(32px,6vw,96px);padding:0 clamp(24px,6vw,88px);opacity:0;">
-        <div style="position:relative;">
-          <img id="jbDiffGhost0" src="assets/illustration-diff3.png" alt="" style="position:absolute;left:0;top:0;width:100%;max-width:600px;height:auto;display:block;opacity:0;"/>
-          <img id="jbDiffGhost1" src="assets/illustration-diff3.png" alt="" style="position:absolute;left:0;top:0;width:100%;max-width:600px;height:auto;display:block;opacity:0;"/>
-          <img src="assets/illustration-diff3.png" alt="Ilustração: transformar contexto em ação" style="width:100%;max-width:600px;height:auto;display:block;position:relative;"/>
-        </div>
-        <div>
-          <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7a2331;margin:0 0 14px;" data-i18n="diff.cards.2.label">Fazer avançar</p>
-          <h3 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3.6vw,2.9rem);font-weight:500;margin:0 0 16px;line-height:1.15;max-width:460px;" data-i18n="diff.cards.2.title">Transformo contexto em ação</h3>
-          <div id="jbDiffUnderline2" style="width:0;height:2px;background:#7a2331;margin-bottom:16px;"></div>
-          <p style="font-size:14px;line-height:1.7;color:#4a4a45;margin:0;max-width:380px;" data-i18n="diff.cards.2.body">Organizo o problema, defino prioridades, crio clareza entre áreas e acompanho a construção até existir algo que possa ser usado, medido e melhorado.</p>
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <p style="font-size:15px;line-height:1.8;color:#33332f;max-width:760px;margin:56px auto 0;padding:0 clamp(20px,6vw,64px);" data-i18n="diff.p2">Já estive no detalhe mais operacional e em salas onde planos de negócio precisavam ser defendidos para lideranças. Essa amplitude me ensinou que senioridade não é se afastar da execução. É ter contexto para saber quando aprofundar, quando destravar e quando dar autonomia.</p>
+  <p style="font-size:15px;line-height:1.8;color:#33332f;max-width:760px;margin:32px auto 0;padding:0 clamp(20px,6vw,64px);" data-i18n="diff.p2">Já estive no detalhe mais operacional e em salas onde planos de negócio precisavam ser defendidos para lideranças. Essa amplitude me ensinou que senioridade não é se afastar da execução. É ter contexto para saber quando aprofundar, quando destravar e quando dar autonomia.</p>
 </section>
 
 <!-- COMO TRABALHO -->
@@ -569,74 +564,42 @@ var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-moti
 
 (function(){
   var stage = document.getElementById('jbDiffStage');
+  var sticky = document.getElementById('jbDiffSticky');
   var concepts = [document.getElementById('jbDiffConcept0'), document.getElementById('jbDiffConcept1'), document.getElementById('jbDiffConcept2')];
-  var img0 = document.getElementById('jbDiffImg0');
-  var dots0 = Array.prototype.slice.call(document.querySelectorAll('.jb-diff-dot0'));
-  var lines1 = Array.prototype.slice.call(document.querySelectorAll('.jb-diff-line1'));
-  var ghost0 = document.getElementById('jbDiffGhost0');
-  var ghost1 = document.getElementById('jbDiffGhost1');
-  var underline2 = document.getElementById('jbDiffUnderline2');
-  if (!stage) return;
+  if (!stage || !sticky) return;
 
-  function settleStatic(){
-    concepts.forEach(function(el){ if (el) el.style.opacity = '1'; });
-    if (img0) { img0.style.transform = 'none'; img0.style.filter = 'none'; img0.style.opacity = '1'; }
-    dots0.forEach(function(d){ d.style.opacity = '0'; });
-    lines1.forEach(function(l){ l.style.strokeDasharray = 'none'; l.style.strokeDashoffset = '0'; });
-    if (ghost0) ghost0.style.opacity = '0';
-    if (ghost1) ghost1.style.opacity = '0';
-    if (underline2) underline2.style.width = '56px';
-  }
+  function settleStatic(){ concepts.forEach(function(el){ if (el) { el.style.opacity = '1'; el.style.transform = 'none'; } }); }
 
   var isMobile = window.matchMedia && window.matchMedia('(max-width:900px)').matches;
 
   if (reduceMotion) { settleStatic(); return; }
 
   if (isMobile) {
-    settleStatic();
+    concepts.forEach(function(el){ if (el) el.style.opacity = '0'; });
     if ('IntersectionObserver' in window) {
-      concepts.forEach(function(el){ if (el) el.style.opacity = '0'; });
       var io = new IntersectionObserver(function(entries){
         entries.forEach(function(entry){
           if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; io.unobserve(entry.target); }
         });
       }, { threshold: 0.2 });
       concepts.forEach(function(el){ if (el) io.observe(el); });
-    }
+    } else { settleStatic(); }
     return;
   }
 
   function onDiffScroll(){
     var rect = stage.getBoundingClientRect();
-    var total = stage.offsetHeight - window.innerHeight;
+    var total = stage.offsetHeight - sticky.offsetHeight;
     var progress = total > 0 ? Math.min(1, Math.max(0, -rect.top / total)) : 0;
     var raw = progress * 3;
     for (var i = 0; i < 3; i++) {
       var dist = Math.abs(raw - (i + 0.5));
-      var op = Math.max(0, Math.min(1, 1 - dist));
-      var local = Math.max(0, Math.min(1, raw - i));
+      var op = Math.max(0, Math.min(1, 1 - dist * 1.6));
       var concept = concepts[i];
-      if (concept) { concept.style.opacity = String(op); concept.style.zIndex = op > 0.5 ? '2' : '1'; }
-      if (i === 0 && img0) {
-        var p = local;
-        img0.style.transform = 'rotate(' + (-6 + 6 * p) + 'deg) translate(' + ((1 - p) * -24) + 'px,' + ((1 - p) * 16) + 'px) scale(' + (0.94 + 0.06 * p) + ')';
-        img0.style.filter = 'blur(' + ((1 - p) * 5) + 'px)';
-        img0.style.opacity = String(0.55 + 0.45 * p);
-        dots0.forEach(function(d){
-          var dx = parseFloat(d.getAttribute('data-dx')), dy = parseFloat(d.getAttribute('data-dy'));
-          d.style.transform = 'translate(' + (dx * (1 - p)) + 'px,' + (dy * (1 - p)) + 'px)';
-          d.style.opacity = String(0.15 + 0.5 * (1 - p));
-        });
-      }
-      if (i === 1 && lines1.length) {
-        var p1 = local;
-        lines1.forEach(function(l){ l.style.strokeDasharray = '500'; l.style.strokeDashoffset = String(500 * (1 - p1)); });
-      }
-      if (i === 2) {
-        var p2 = local;
-        if (ghost0) { ghost0.style.transform = 'translate(' + (-30 * (1 - p2)) + 'px,' + (-24 * (1 - p2)) + 'px) scale(' + (1.05 - 0.05 * p2) + ')'; ghost0.style.opacity = String(0.35 * (1 - p2)); }
-        if (ghost1) { ghost1.style.transform = 'translate(' + (24 * (1 - p2)) + 'px,' + (20 * (1 - p2)) + 'px) scale(' + (0.96 + 0.04 * p2) + ')'; ghost1.style.opacity = String(0.25 * (1 - p2)); }
-        if (underline2) { underline2.style.width = (56 * p2) + 'px'; }
+      if (concept) {
+        concept.style.opacity = String(op);
+        concept.style.zIndex = op > 0.5 ? '2' : '1';
+        concept.style.transform = 'translateY(' + ((1 - op) * 14) + 'px) scale(' + (0.985 + 0.015 * op) + ')';
       }
     }
   }
